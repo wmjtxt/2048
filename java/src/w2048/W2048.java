@@ -65,7 +65,7 @@ public class W2048 extends JFrame {
      * @param args
      */
     public static void main(String[] args) {
-        W2048 game = new W2048(400, 500);
+        W2048 game = new W2048(400, 400);
         game.setTitle("2048");
         game.setLocationRelativeTo(null);
         game.setVisible(true);
@@ -76,7 +76,7 @@ public class W2048 extends JFrame {
      * 构造一个默认大小的界面
      */
     public W2048() {
-        this(400, 500);
+        this(400, 400);
     }
 
     /**
