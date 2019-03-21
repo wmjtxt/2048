@@ -15,6 +15,7 @@
 #include <cstdlib>
 #include <unistd.h>
 #include <iomanip>
+#include <curses.h>
 
 using namespace std;
 

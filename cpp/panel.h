@@ -17,7 +17,7 @@ UP,
 DOWN,
 LEFT,
 RIGHT,
-ERR,
-QUIT
+QUIT,
+ERR
 };
 #endif //panel.h

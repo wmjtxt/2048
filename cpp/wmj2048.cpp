@@ -47,7 +47,7 @@ bool W2048::isEmpty(int x, int y){
 
 int W2048::generateNum(int x, int y){
 	if(isEmpty(x,y))
-		return rand()%5 ? 2 : 4;//
+		return rand()%10 == 1 ? 4 : 2;//
 	else 
 		return 0;
 }
@@ -246,11 +246,11 @@ void W2048::showPane(Pane& p){
 }
 
 void W2048::run(){
-	cout << "*****game start*****" << endl;
+	system("clear");
 	//showPane(pane1);
 	//sleep(1);
 	while(true){
-		//system("clear");
+		system("clear");
 		if(gameOver()){
 			cout << "-----game over-----" << endl;
 			showPane(pane1);
@@ -277,7 +277,7 @@ void W2048::run(){
 				case 'a':d = LEFT;	break;
 				case 'd':d = RIGHT;	break;
 				case 'q':d = QUIT;	break;
-				default: d = ERR;	break;
+				default :d = (Direction)ERR;	break;
 			}
 			if(d == ERR){
 				char ch;
